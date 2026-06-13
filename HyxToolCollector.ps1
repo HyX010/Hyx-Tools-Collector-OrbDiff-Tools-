@@ -134,14 +134,14 @@ function Download-GitHubRelease {
 
 # Lista de herramientas de Orbdiff (CORREGIDA)
 $orbdiffTools = @(
-    @{ Repo="Orbdiff/PrefetchView"; Version="v1.6.7"; Asset="pv++.exe"; Name="pv++" }
+    @{ Repo="Orbdiff/PrefetchView"; Version="v1.6.7"; Asset="pv++.exe"; Name="Pv++" }
     @{ Repo="Orbdiff/BAMReveal"; Version="v1.3.1"; Asset="BAMReveal.exe"; Name="BAMReveal" }
     @{ Repo="Orbdiff/StringsParser"; Version="v1.0"; Asset="StringsParser.exe"; Name="StringsParser" }
     @{ Repo="Orbdiff/Fileless"; Version="v1.3"; Asset="Fileless.exe"; Name="Fileless" }
-    @{ Repo="Orbdiff/DPS-Analyzer"; Version="v1.1"; Asset="dpsanalyzer.exe"; Name="dpsanalyzer" }
+    @{ Repo="Orbdiff/DPS-Analyzer"; Version="v1.1"; Asset="dpsanalyzer.exe"; Name="Dpsanalyzer" }
     @{ Repo="Orbdiff/UserAssistView"; Version="v1.0"; Asset="UserAssistView.exe"; Name="UserAssistView" }
     @{ Repo="Orbdiff/JournalParser"; Version="v1.2"; Asset="JournalParser.exe"; Name="JournalParser" }
-    @{ Repo="Orbdiff/MFT-HardLink"; Version="v1.2"; Asset="HardLink.exe"; Name="HardLink" }
+    @{ Repo="Orbdiff/MFT-HardLink"; Version="v1.2"; Asset="HardLink.exe"; Name="MFT-HardLink" }
     @{ Repo="Orbdiff/AmcacheParser"; Version="v1.0"; Asset="AmcacheParser.exe"; Name="Orbdiff AmcacheParser" }
     @{ Repo="Orbdiff/CheckDeletedUSN"; Version="v0.2.1"; Asset="CheckDeletedUSN.exe"; Name="CheckDeletedUSN" }
     @{ Repo="Orbdiff/USBDetector"; Version="v1.1"; Asset="USBDetector.exe"; Name="USBDetector" }
