@@ -124,7 +124,7 @@ function Download-File {
     }
 }
 
-# Función para descargar desde releases de GitHub
+# Función para descargar desde releases de GitHub con nombres exactos
 function Download-GitHubRelease {
     param([string]$Repo, [string]$Version, [string]$AssetName, [string]$ToolName)
     
@@ -132,20 +132,20 @@ function Download-GitHubRelease {
     return Download-File -Url $url -FileName $AssetName -ToolName $ToolName
 }
 
-# Lista de herramientas de Orbdiff
+# Lista de herramientas de Orbdiff con nombres de assets CORREGIDOS
 $orbdiffTools = @(
-    @{ Repo="Orbdiff/PrefetchView"; Version="v1.6.7"; Asset="PrefetchView.exe"; Name="PrefetchView" },
-    @{ Repo="Orbdiff/BAMReveal"; Version="v1.3.1"; Asset="BAMReveal.exe"; Name="BAMReveal" },
-    @{ Repo="Orbdiff/StringsParser"; Version="v1.0"; Asset="StringsParser.exe"; Name="StringsParser" },
-    @{ Repo="Orbdiff/Fileless"; Version="v1.3"; Asset="Fileless.exe"; Name="Fileless" },
-    @{ Repo="Orbdiff/DPS-Analyzer"; Version="v1.1"; Asset="DPS-Analyzer.exe"; Name="DPS-Analyzer" },
-    @{ Repo="Orbdiff/UserAssistView"; Version="v1.0"; Asset="UserAssistView.exe"; Name="UserAssistView" },
-    @{ Repo="Orbdiff/JournalParser"; Version="v1.2"; Asset="JournalParser.exe"; Name="JournalParser" },
-    @{ Repo="Orbdiff/MFT-HardLink"; Version="v1.2"; Asset="MFT-HardLink.exe"; Name="MFT-HardLink" },
-    @{ Repo="Orbdiff/AmcacheParser"; Version="v1.0"; Asset="AmcacheParser.exe"; Name="Orbdiff AmcacheParser" },
-    @{ Repo="Orbdiff/CheckDeletedUSN"; Version="v0.2.1"; Asset="CheckDeletedUSN.exe"; Name="CheckDeletedUSN" },
-    @{ Repo="Orbdiff/USBDetector"; Version="v1.1"; Asset="USBDetector.exe"; Name="USBDetector" },
-    @{ Repo="Orbdiff/JARParser"; Version="v1.2"; Asset="JARParser.exe"; Name="JARParser" },
+    @{ Repo="Orbdiff/PrefetchView"; Version="v1.6.7"; Asset="PrefetchView++.exe"; Name="PrefetchView" }
+    @{ Repo="Orbdiff/BAMReveal"; Version="v1.3.1"; Asset="BAMReveal.exe"; Name="BAMReveal" }
+    @{ Repo="Orbdiff/StringsParser"; Version="v1.0"; Asset="StringsParser.exe"; Name="StringsParser" }
+    @{ Repo="Orbdiff/Fileless"; Version="v1.3"; Asset="Fileless.exe"; Name="Fileless" }
+    @{ Repo="Orbdiff/DPS-Analyzer"; Version="v1.1"; Asset="DPS-Analyzer.exe"; Name="DPS-Analyzer" }
+    @{ Repo="Orbdiff/UserAssistView"; Version="v1.0"; Asset="UserAssistView.exe"; Name="UserAssistView" }
+    @{ Repo="Orbdiff/JournalParser"; Version="v1.2"; Asset="JournalParser.exe"; Name="JournalParser" }
+    @{ Repo="Orbdiff/MFT-HardLink"; Version="v1.2"; Asset="MFT-HardLink.exe"; Name="MFT-HardLink" }
+    @{ Repo="Orbdiff/AmcacheParser"; Version="v1.0"; Asset="AmcacheParser.exe"; Name="Orbdiff AmcacheParser" }
+    @{ Repo="Orbdiff/CheckDeletedUSN"; Version="v0.2.1"; Asset="CheckDeletedUSN.exe"; Name="CheckDeletedUSN" }
+    @{ Repo="Orbdiff/USBDetector"; Version="v1.1"; Asset="USBDetector.exe"; Name="USBDetector" }
+    @{ Repo="Orbdiff/JARParser"; Version="v1.2"; Asset="JARParser.exe"; Name="JARParser" }
     @{ Repo="Orbdiff/PFTrace"; Version="v1.0.1"; Asset="PFTrace.exe"; Name="PFTrace" }
 )
 
@@ -172,5 +172,5 @@ if ($response -match '^[Yy]') {
 }
 
 Write-Host "`n=======================================" -ForegroundColor Magenta
-Write-Host "  Herramientas guardadas en: $DownloadPath" -ForegroundColor Cyan
+Write-Host "  Herramientas guardadas en: $DownloadPath" -ForegroundColor White
 Write-Host "=======================================" -ForegroundColor Magenta
