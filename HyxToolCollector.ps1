@@ -124,7 +124,7 @@ function Download-File {
     }
 }
 
-# Función para descargar desde releases de GitHub con nombres exactos
+# Función para descargar desde releases de GitHub
 function Download-GitHubRelease {
     param([string]$Repo, [string]$Version, [string]$AssetName, [string]$ToolName)
     
@@ -132,7 +132,7 @@ function Download-GitHubRelease {
     return Download-File -Url $url -FileName $AssetName -ToolName $ToolName
 }
 
-# Lista de herramientas de Orbdiff con nombres de assets CORREGIDOS
+# Lista de herramientas de Orbdiff (CORREGIDA)
 $orbdiffTools = @(
     @{ Repo="Orbdiff/PrefetchView"; Version="v1.6.7"; Asset="PrefetchView++.exe"; Name="PrefetchView" }
     @{ Repo="Orbdiff/BAMReveal"; Version="v1.3.1"; Asset="BAMReveal.exe"; Name="BAMReveal" }
